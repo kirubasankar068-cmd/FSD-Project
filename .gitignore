@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+Job-System/node_modules/
+Backend/node_modules/
+
+# Environment
+.env
+Backend/config/.env
+
+# Build
+Job-System/dist/
+Job-System/build/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*

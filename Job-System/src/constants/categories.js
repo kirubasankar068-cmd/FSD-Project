@@ -1,0 +1,21 @@
+export const jobCategories = [
+  "Computer Science Engineering (CSE)",
+  "CSE",
+  "Software Engineering",
+  "Information Technology (IT)",
+  "Mechanical Engineering",
+  "Civil Engineering",
+  "Electrical & Electronics Engineering (EEE)",
+  "Electronics & Communication Engineering (ECE)",
+  "Artificial Intelligence & Data Science",
+  "Biomedical Engineering",
+  "Chemical Engineering",
+  "Aerospace Engineering",
+  "Technology",
+  "Healthcare",
+  "Finance",
+  "Education",
+  "Marketing",
+  "Design",
+  "Sales"
+];
