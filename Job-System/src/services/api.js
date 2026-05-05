@@ -1,4 +1,6 @@
-const API_BASE_URL = '/api';
+const API_BASE_URL = import.meta.env.PROD 
+  ? 'https://fsd-project-3a29.onrender.com/api' 
+  : '/api';
 
 // Get auth token from localStorage
 const getAuthToken = () => {

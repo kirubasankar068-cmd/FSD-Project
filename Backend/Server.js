@@ -1,7 +1,9 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-require("dotenv").config({ path: __dirname + '/config/.env' });
+const path = require('path');
+require("dotenv").config({ path: path.join(__dirname, 'config', '.env') });
+// Fallback: Render sets env vars directly in the dashboard, so dotenv file is optional in production
 
 const app = express();
 
@@ -26,7 +28,6 @@ app.use((req, res, next) => {
 const authMiddleware = require("./middleware/authMiddleware");
 const roleMiddleware = require("./middleware/roleMiddleware");
 const fs = require('fs');
-const path = require('path');
 
 // Ensure uploads dir exists before boot
 const uploadDir = path.join(__dirname, 'uploads');
